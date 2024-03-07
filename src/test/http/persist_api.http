@@ -1,0 +1,72 @@
+###  visitEvent visitEvent visitEvent visitEvent visitEvent visitEvent  ###
+### ad a new visit-event
+POST {{api_url}}/api/persist/addVisit
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+{
+  "uuid": "",
+  "barName": "Penfolds",
+  "drinks": 12,
+  "beverage": "Corona",
+  "happy_hour": true,
+  "visited": "2019-09-13"
+}
+### UPDATE a visit-event
+POST {{api_url}}/api/persist/updateVisit
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+{
+  "uuid": "8c1e6d66-ae7d-434d-ba2e-85c829041bc3",
+  "barName": "SugaCane",
+  "drinks": 1,
+  "beverage": "Whiskey",
+  "happy_hour": true,
+  "visited": "2019-09-13"
+}
+
+
+###  bar bar bar bar ###
+###this will add a new bar with it's stock
+POST {{api_url}}/api/persist/addBar
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+{
+  "barName": "WestPAck",
+  "adress": "12 NewBarStreet",
+  "barStockItemList": [
+    {
+      "beverage": "Corona",
+      "price": 35.99
+    },
+    {
+      "beverage": "Jose Cuervo",
+      "price": 22.50
+    }
+  ]
+}
+
+
+### UPDATE a visit-event
+POST {{api_url}}/api/persist/updateVisit
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+{
+  "uuid": "8c1e6d66-ae7d-434d-ba2e-85c829041bc3",
+  "barName": "SugaCane",
+  "drinks": 1,
+  "beverage": "Whiskey",
+  "happy_hour": true,
+  "visited": "2019-09-13"
+}

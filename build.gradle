@@ -1,0 +1,82 @@
+buildscript {
+    ext {
+        springBootVersion = '2.7.18'
+//        awsSdkVersion = '2.17.209'
+        springBootVersion = '2.6.12'
+        awsSdkVersion = '2.17.209'
+
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.7.18'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'java'
+}
+
+group 'za.co.drinker'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+configurations {
+    warRuntime
+}
+ext['riskSpringSecurityVersion'] = '0.21.+'
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('org.springframework.boot:spring-boot-starter-validation')
+    implementation('org.springframework.boot:spring-boot-starter-security')
+    implementation('org.springframework.security:spring-security-web')
+//    implementation('commons-lang:commons-lang3:3.12.0')
+    implementation('commons-io:commons-io:2.6')
+    implementation('org.apache.commons:commons-lang3:3.7')
+    implementation('org.json:json:20180813')
+//Thanks for using https://jar-download.com
+
+//    implementation('com.amazonaws:aws-java-sdk-s3:1.12.232')
+
+//    implementation('com.amazonaws:amazon-sqs-java-messaging-lib:1.0.8')
+//    implementation('software.amazon.awssdk:sqs:${awsSdkVersion}')
+//    implementation('software.amazon.awssdk:sns:${awsSdkVersion}')
+//    implementation('software.amazon.awssdk:dynamodb:${awsSdkVersion}')
+
+    implementation('org.postgresql:postgresql')
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+springBoot {
+    buildInfo {
+        properties {
+            additional = [
+                    'java.source'       : "1.8",
+                    'java.target'       : "1.8",
+                    'encoding.source'   : "${System.properties['file.encoding']}",
+                    'encoding.reporting': "${System.properties['file.encoding']}"
+            ]
+        }
+    }
+}
+
+jar {
+    enabled = false
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,60 @@
+[    {
+        "barName": "Tiger's Milk",
+        "address": "55 Kloof St, Gardens, Cape Town, 8001",
+        "stock": [
+            { "name": "Castle Lite", "price": 20.0 },
+            { "name": "Jose Cuervo", "price": 40.0 },
+            { "name": "Tiger's Milk Lager", "price": 25.0 },
+            { "name": "Don Julio", "price": 50.0 },
+            { "name": "Red Label", "price": 35.50 }
+        ]
+    },
+    {
+        "barName": "Cubana",
+        "address": "Centre, 9 Somerset Rd, Green Point, Cape Town, 8001",
+        "stock": [
+            { "name": "Castle Lite", "price": 23.25 },
+            { "name": "Corona", "price": 45.0 },
+            { "name": "Jose Cuervo", "price": 38.10 },
+            { "name": "Stella Artois", "price": 35.0 },
+            { "name": "Don Julio", "price": 52.0 },
+            { "name": "Red Label", "price": 38.50 }
+        ]
+    },
+    {
+        "barName": "Yours Truly",
+        "address": "73 Kloof St, Schotsche Kloof, Cape Town, 8001",
+        "stock": [
+            { "name": "Castle Lite", "price": 30.0 },
+            { "name": "Stella Artois", "price": 40.0 },
+            { "name": "Don Julio", "price": 52.0 },
+            { "name": "Red Label", "price": 50.0 }
+        ]
+    },
+    {
+        "barName": "Jerry's",
+        "address": "5 Park Rd, Gardens, Cape Town, 8001",
+        "stock": [
+            { "name": "Corona", "price": 30.0 },
+            { "name": "Castle Lite", "price": 25.0 },
+            { "name": "Jose Cuervo", "price": 40.50 },
+            { "name": "Stella Artois", "price": 38.50 },
+            { "name": "Don Julio", "price": 45.0 },
+            { "name": "Black Label", "price": 35.0 }
+        ]
+    },
+    {
+        "barName": "Fat Cactus",
+        "address": "5 Park Road, Gardens, Cape Town, 8001",
+        "stock": [
+            { "name": "Corona", "price": 30.0 },
+            { "name": "Castle Lite", "price": 25.0 },
+            { "name": "Jose Cuervo", "price": 40.50 },
+            { "name": "Buchanan's", "price": 38.0 },
+            { "name": "Stella Artois", "price": 35.0 },
+            { "name": "Don Julio", "price": 41.0 },
+            { "name": "Red Label", "price": 46.0 },
+            { "name": "Black Label", "price": 35.0 }
+        ]
+    }
+]

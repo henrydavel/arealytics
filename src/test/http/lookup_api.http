@@ -1,0 +1,55 @@
+###  bars bars bars bars bars bars ###
+### lookup * bars with pagination
+GET {{api_url}}/api/lookup/bars/0/1
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+### lookup bar by ID
+GET {{api_url}}/api/lookup/bar/id/15
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+### lookup bar by NAME
+GET {{api_url}}/api/lookup/bar/barname/WestPAck
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+### lookup bar by NAME
+GET {{api_url}}/api/lookup/bar/address/address
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+###  visitEvents visitEvents visitEvents visitEvents ###
+### lookup visitEvents with pagination
+GET {{api_url}}/api/lookup/visitevents/0/2
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+### lookup visitEvents by NAME
+GET {{api_url}}/api/lookup/visitevents/WestPAck
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+### lookup visitEvents according to date ranges with pagination
+GET {{api_url}}/api/lookup/visitevents/between/2017-09-03/2020-10-10/0/2
+Authorization: Basic {{drinker_app_username}} {{drinker_app_password}}
+Accept: application/json
+Content-Type:  application/json
+Cache-Control: no-cache
+
+
+
+
+
