@@ -1,5 +1,5 @@
 
-The ***drinker*** app is a java api connecting to AWS RDS
+The ***drinker*** app is a java api connecting to ***AWS RDS***
 
 
 Your can pull 'drinker' into intellij:
@@ -10,9 +10,10 @@ https://github.com/henrydavel/arealytics.git
 after the build you can run the project locally and intellij wil start up TomCat and deploy the app
 accodingly to localhost
 
-once up and running you can open the following 2 files that will give you access to the api
-        ~/persist_api.http   
-        ~/lookup.http  
+once up and running you can open the following 2 files that will give you access to the api. you should be able to make all the relevant calls that
+would be called from the front-end from these 2 files. Lookups and persisting data as per document
+* ~/persist_api.http   
+*  ~/lookup.http  
 (be sure to set you environment to local)
 
 Basic Auth was set up for this and the username password is configured in the application.properties (
