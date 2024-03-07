@@ -1,0 +1,10 @@
+[
+    { "name": "Corona", "codebar": "65473829", "type": "beer", "alcoholUnits": 1.2 },
+    { "name": "Castle Lite", "codebar": "76531005", "type": "beer", "alcoholUnits": 1.2 },
+    { "name": "Jose Cuervo", "codebar": "24199034", "type": "tequila", "alcoholUnits": 1.4 },
+    { "name": "Buchanan's", "codebar": "0054384099", "type": "whiskey", "alcoholUnits": 1.4 },
+    { "name": "Stella Artois", "codebar": "0362882147", "type": "beer", "alcoholUnits": 1.2 },
+    { "name": "Don Julio", "codebar": "24199034", "type": "tequila", "alcoholUnits": 1.4 },
+    { "name": "Red Label", "codebar": "452930015", "type": "whiskey", "alcoholUnits": 1.4 },
+    { "name": "Black Label", "codebar": "1603638688", "type": "beer", "alcoholUnits": 1.2 }
+]
