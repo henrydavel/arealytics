@@ -27,7 +27,8 @@ Basic Auth was set up for this and the username password is configured in the ap
 > 
 **DB Details:**
 
-![ERD thedrinker.png](ERD%20thedrinker.png)
+![image](https://github.com/henrydavel/arealytics/assets/32166475/e6f1f79b-5e58-4c3d-8513-64ef27e538ec)
+
 
 Above is an ERD of the DB.
 I added an extra table called 'drinker' but did not populate any data or functionality for it(yet))
