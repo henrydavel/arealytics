@@ -60,6 +60,3 @@ AWS-RDS
 * url: https://eu-west-1.console.aws.amazon.com/rds/home?region=eu-west-1#database:id=thedrinker;is-cluster=false
 
 
-
-
-
