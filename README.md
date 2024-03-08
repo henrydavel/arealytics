@@ -26,7 +26,7 @@ Basic Auth was set up for this and the username password is configured in the ap
 > 
 > 
 **DB Details:**
-![ERD thedrinker.png](ERD%20thedrinker.png)
+![drinker API flow.jpg](ERD%20thedrinker.png)
 
 Above is an ERD of the DB.
 I added an extra table called 'drinker' but did not populate any data or functionality for it(yet))
