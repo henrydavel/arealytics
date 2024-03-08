@@ -26,6 +26,7 @@ Basic Auth was set up for this and the username password is configured in the ap
 > 
 > 
 **DB Details:**
+
 ![ERD thedrinker.png](ERD%20thedrinker.png)
 
 Above is an ERD of the DB.
