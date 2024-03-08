@@ -2,9 +2,11 @@
 The ***drinker*** app is a java api connecting to ***AWS RDS***
 
 
-Your can pull 'drinker' into intellij:
-https://github.com/henrydavel/arealytics.git
+Your can pull 'drinker' into intellij from master branch:
+***https://github.com/henrydavel/arealytics.git***
 
+
+ ![drinker API flow.jpg](..%2Fdrinker%20API%20flow.jpg)
 >build the project with ***gradlew clean build***
 
 after the build you can run the project locally and intellij wil start up TomCat and deploy the app
@@ -24,8 +26,9 @@ Basic Auth was set up for this and the username password is configured in the ap
 > 
 > 
 **DB Details:**
+![img.png](img.png)
 
-***ERD thedrinkerdb.pdf*** is a diagram of the DB in the content root. 
+Above is an ERD of the DB.
 I added an extra table called 'drinker' but did not populate any data or functionality for it(yet))
 >You can also view the ERD  https://dbdiagram.io/d/thedrinker-65e2d11ccd45b569fb57cba1
 
@@ -33,9 +36,9 @@ The DB is the drive behind the app.
 
 The tables are split between the 'Data' tables (Stock, Bar, Beverages...) and the VistEvent table.
 
-The ***VisitEventTable** bears no relation to any of the data tables and is loosley couple to the rest of the db (could later put a person/drinker table to personalise the app and make it track not just Juan,
+The **VisitEvent** table bears no relation to any of the data tables and is loosley couple to the rest of the db (could later put a person/drinker table to personalise the app and make it track not just Juan,
 but also some other  chaps!)
-A stored procedure will use the visit_events and from the Visit_Events deductions can be made 'bout Juan's drinking habits.
+Various stored procedures will use the visit_events and from the Visit_Events deductions can be made 'bout Juan's drinking habits.
 
 All the DB create scripts can be found in : 
 >***~/src/test/resources/data***
