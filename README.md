@@ -15,6 +15,7 @@ would be called from the front-end from these 2 files. Lookups and persisting da
 * ~/persist_api.http   
 *  ~/lookup.http  
 (be sure to set you environment to local)
+You will be able to test all REST-calls. Most of the business logic is kept in the db in the form of stored procedures.
 
 Basic Auth was set up for this and the username password is configured in the application.properties (
 >spring.security.user.name=drinker
@@ -23,6 +24,18 @@ Basic Auth was set up for this and the username password is configured in the ap
 > 
 > 
 **DB Details:**
+
+***ERD thedrinkerdb.pdf*** is a diagram of the DB in the content root. 
+I added an extra table called 'drinker' but did not populate any data or functionality for it(yet))
+>You can also view the ERD  https://dbdiagram.io/d/thedrinker-65e2d11ccd45b569fb57cba1
+
+The DB is the drive behind the app.
+
+The tables are split between the 'Data' tables (Stock, Bar, Beverages...) and the VistEvent table.
+
+The ***VisitEventTable** bears no relation to any of the data tables and is loosley couple to the rest of the db (could later put a person/drinker table to personalise the app and make it track not just Juan,
+but also some other  chaps!)
+A stored procedure will use the visit_events and from the Visit_Events deductions can be made 'bout Juan's drinking habits.
 
 All the DB create scripts can be found in : 
 >***~/src/test/resources/data***
